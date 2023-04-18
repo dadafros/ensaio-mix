@@ -1,0 +1,22 @@
+.volume-slider {
+    -webkit-appearance: slider-vertical;
+    writing-mode: bt-lr; /* IE */
+    -webkit-appearance: slider-vertical; /* WebKit browsers */
+    width: 12px;
+    height: 100px;
+    margin: 30px;
+  }
+
+.player-label {
+    text-align: center;
+  }
+
+.player-container {
+    display: inline-block;
+    text-align: center;
+  }
+
+#seek-slider {
+    width: 80%;
+    margin: 10px auto;
+  }
