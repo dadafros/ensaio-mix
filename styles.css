@@ -10,7 +10,16 @@ white */
 
 body {
   text-align: center;
-  background-color: #280144  ;
+  background-image: radial-gradient(
+    circle at top,
+    black 20%,
+    #280144 40%,
+    #6a1678 60%,
+    #8f85ff 70%,
+    #51a3e0 75%,
+    #78c2ef 80%,
+    #3cd09c 85% 
+  );
   font-family: 'Merriweather', serif;
 }
 
@@ -27,6 +36,10 @@ p {
 
 label {
   color: white;
+}
+
+input[type='file'] {
+  display: none;
 }
 
 .volume-slider {
@@ -84,6 +97,38 @@ label {
   width: auto;
 }
 
+.file-button {
+  color: white;
+  width: 180px;
+  height: 30px;
+  background-image: linear-gradient(
+    to right, 
+    #8f85ff 50%,
+    #51a3e0 65%,
+    #78c2ef 75%,
+    #3cd09c 85% 
+  );
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  padding: 0 6px;
+  border-radius: 8px;
+  margin: 0 auto 30px;
+  display: flex;
+}
+
+.file-button:hover {
+  background-image: linear-gradient(
+    to left, 
+    #8f85ff 50%,
+    #51a3e0 65%,
+    #78c2ef 75%,
+    #3cd09c 85% 
+  );
+}
+
 #seek-slider {
   width: 80%;
   margin: 20px auto;
@@ -114,47 +159,3 @@ label {
 #dada {
   width: 80px;
 }
-
-#audio-file {
-  color: white;
-  position: relative;
-  float: left;
-  margin-left: 10%;
-  margin-bottom: 20px;
-  font-family: 'Merriweather', serif;
-}
-
-/*#audio-file::before {
-  content: 'Selecione seus arquivos';
-  color: white;
-  background: #78c2ef;
-  background-image: -webkit-linear-gradient(top, #78c2ef, #3cd09c);
-  background-image: -moz-linear-gradient(top, #78c2ef, #3cd09c);
-  background-image: -ms-linear-gradient(top, #78c2ef, #3cd09c);
-  background-image: -o-linear-gradient(top, #78c2ef, #3cd09c);
-  background-image: linear-gradient(to bottom, #78c2ef, #3cd09c);
-  -webkit-border-radius: 10;
-  -moz-border-radius: 10;
-  -webkit-file-upload-button: none;
-  border-radius: 10px;
-  display: inline-block;
-  padding: 5px 8px;
-  outline: none;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  cursor: pointer;
-  text-shadow: 1px 1px #fff;
-  font-size: 10pt;
-}
-
-#audio-file:hover::before {
-  background-image: -webkit-linear-gradient(top, #78c2ef, #3cd09c);
-  background-image: -moz-linear-gradient(top, #78c2ef, #3cd09c);
-  background-image: -ms-linear-gradient(top, #78c2ef, #3cd09c);
-  background-image: -o-linear-gradient(top, #78c2ef, #3cd09c);
-  background-image: linear-gradient(to bottom, #78c2ef, #3cd09c);
-}
-
-#audio-file:active::before {
-  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
-}*/

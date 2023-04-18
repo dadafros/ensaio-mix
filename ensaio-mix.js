@@ -65,6 +65,28 @@ audioFileInput.addEventListener('change', function() {
     }
 });
 
+audioFileInput.addEventListener('click', function() {
+    this.value = ''
+
+    // Stop and unload all audio players
+    audioPlayers.forEach(function(audioPlayer) {
+        audioPlayer.element.pause();
+        audioPlayer.element.src = "";
+        audioPlayer.isPlaying = false;
+        playAllButtonImage.src = "play.png";
+    });
+
+    // Clear out the playersDiv
+    playersDiv.innerHTML = '';
+
+    // Clear out the audioPlayers array
+    audioPlayers = [];
+
+    // Reset the seek slider value and max value
+    seekSlider.value = 0;
+    seekSlider.max = 0;
+});
+
 var playAllButton = document.getElementById('play-all-button');
 var playAllButtonImage = document.getElementById('play-all-button-image');
 
@@ -91,6 +113,9 @@ seekSlider.addEventListener('input', function() {
 });
 
 function formatTime(time) {
+    if (isNaN(time)) {
+        return '0:00';
+      }
     var minutes = Math.floor(time / 60);
     var seconds = Math.floor(time % 60);
     return minutes + ':' + (seconds < 10 ? '0' : '') + seconds;
