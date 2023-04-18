@@ -1,22 +1,66 @@
+body {
+  text-align: center;
+}
+
 .volume-slider {
-    -webkit-appearance: slider-vertical;
-    writing-mode: bt-lr; /* IE */
-    -webkit-appearance: slider-vertical; /* WebKit browsers */
-    width: 12px;
-    height: 100px;
-    margin: 30px;
-  }
+  -webkit-appearance: slider-vertical;
+  writing-mode: bt-lr;
+  /* IE */
+  -webkit-appearance: slider-vertical;
+  /* WebKit browsers */
+  width: 12px;
+  height: 200px;
+  margin: auto;
+  display: block;
+}
 
 .player-label {
-    text-align: center;
-  }
+  text-align: center;
+  display: block;
+  margin: 10px 0px;
+}
 
 .player-container {
-    display: inline-block;
-    text-align: center;
-  }
+  display: inline-block;
+  text-align: center;
+  width: 100px;
+  margin: 20px 0px;
+}
+
+.top-container {
+  margin-top: 50px;
+  padding: 20px 0;
+}
+
+.middle-container {
+  padding: 20px 0;
+}
+
+.bottom-container {
+  padding: 20px 0;
+}
+
+.copyright {
+  padding: 20px 0;
+  margin: 0 auto;
+  font-size: 0.75rem;
+  width: 50%;
+}
 
 #seek-slider {
-    width: 80%;
-    margin: 10px auto;
-  }
+  width: 80%;
+  margin: 20px auto;
+  display: block;
+}
+
+#audio-file {
+  margin-left: 10%;
+  display: block;
+}
+
+#play-all-button {
+  margin: 0 5px;
+  border: none;
+  padding: 0;
+  font-size: 20px;
+}

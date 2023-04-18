@@ -73,11 +73,11 @@ playAllButton.addEventListener('click', function() {
     if (audioPlayer.isPlaying) {
         audioPlayer.element.pause();
         audioPlayer.isPlaying = false;
-        playAllButton.textContent = 'Play';
+        playAllButton.textContent = '▶️';
     } else {
         audioPlayer.element.play();
         audioPlayer.isPlaying = true;
-        playAllButton.textContent = 'Pause';
+        playAllButton.textContent = '⏸️';
     }
     });
 });
