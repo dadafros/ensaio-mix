@@ -66,6 +66,7 @@ audioFileInput.addEventListener('change', function() {
 });
 
 var playAllButton = document.getElementById('play-all-button');
+var playAllButtonImage = document.getElementById('play-all-button-image');
 
 // Add an event listener to the play button to toggle the playback state of all audio elements
 playAllButton.addEventListener('click', function() {
@@ -73,11 +74,11 @@ playAllButton.addEventListener('click', function() {
     if (audioPlayer.isPlaying) {
         audioPlayer.element.pause();
         audioPlayer.isPlaying = false;
-        playAllButton.textContent = '▶️';
+        playAllButtonImage.src = "play.png";
     } else {
         audioPlayer.element.play();
         audioPlayer.isPlaying = true;
-        playAllButton.textContent = '⏸️';
+        playAllButtonImage.src = "pause.png";
     }
     });
 });

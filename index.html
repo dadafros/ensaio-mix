@@ -5,27 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ensaio Mix</title>
+    <link rel="icon" href="otvlink.gif">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Luckiest+Guy&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="top-container">
-      <h1>Ensaio Mix</p>
-      <input type="file" id="audio-file" accept=".mp3,.wav,.ogg" multiple>
+      <h1>Ensaio Mix</h1>
+      <img src="otvlink.gif" id="gif"/>
     </div>
 
     <div id="players"></div>
 
     <div class="middle-container">
+      <input type="file" id="audio-file" accept=".mp3,.wav,.ogg" multiple>
       <input type="range" id="seek-slider" min="0" value="0">
-      
-      <p>
-        <button id="play-all-button">▶️</button>
-        <span id="current-time">0:00</span> / 
-        <span id="duration">0:00</span>
-      </p>
+      <div class="container">
+        <button id="play-all-button">
+          <img src="play.png" alt="play button" id="play-all-button-image">
+        </button>
+        <p class="timer">
+          <span id="current-time">0:00</span> / 
+          <span id="duration">0:00</span>
+        </p>
+      </div>
     </div>
 
     <div class="bottom-container">
+      <img src="dada.webp" id="dada"/>
       <p class="copyright">© 2023 Davi Frossard</p>
     </div>
 

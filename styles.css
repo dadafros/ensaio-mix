@@ -1,5 +1,32 @@
+/* Color pallete 
+black
+#280144
+#6a1678
+#8f85ff
+#51a3e0
+#78c2ef
+#3cd09c
+white */
+
 body {
   text-align: center;
+  background-color: #280144  ;
+  font-family: 'Merriweather', serif;
+}
+
+h1 {
+  color: #3cd09c;
+  font-family: 'Luckiest Guy', cursive;
+  font-weight: normal;
+  font-size: 3rem;
+}
+
+p {
+  color: white;
+}
+
+label {
+  color: white;
 }
 
 .volume-slider {
@@ -15,21 +42,22 @@ body {
 }
 
 .player-label {
+  color: white;
   text-align: center;
   display: block;
-  margin: 10px 0px;
+  margin: 10px 0;
 }
 
 .player-container {
   display: inline-block;
   text-align: center;
   width: 100px;
-  margin: 20px 0px;
+  margin: 20px 0;
 }
 
 .top-container {
   margin-top: 50px;
-  padding: 20px 0;
+  padding: 20px;
 }
 
 .middle-container {
@@ -47,20 +75,86 @@ body {
   width: 50%;
 }
 
+.timer {
+  float: right;
+}
+
+.container {
+  display: inline-block;
+  width: auto;
+}
+
 #seek-slider {
   width: 80%;
   margin: 20px auto;
   display: block;
 }
 
-#audio-file {
-  margin-left: 10%;
-  display: block;
+#play-all-button {
+  border: none;
+  background-color: transparent;
+  display: inline-block;
+  padding: 0;
+  margin-right: 5px;
+  width: 50px;
+  height: 50px;
 }
 
-#play-all-button {
-  margin: 0 5px;
-  border: none;
-  padding: 0;
-  font-size: 20px;
+#play-all-button-image {
+  width: 50px;
+  height: 50px;
 }
+
+#gif {
+  width: 50px;
+  display: block;
+  margin: 10px auto;
+}
+
+#dada {
+  width: 80px;
+}
+
+#audio-file {
+  color: white;
+  position: relative;
+  float: left;
+  margin-left: 10%;
+  margin-bottom: 20px;
+  font-family: 'Merriweather', serif;
+}
+
+/*#audio-file::before {
+  content: 'Selecione seus arquivos';
+  color: white;
+  background: #78c2ef;
+  background-image: -webkit-linear-gradient(top, #78c2ef, #3cd09c);
+  background-image: -moz-linear-gradient(top, #78c2ef, #3cd09c);
+  background-image: -ms-linear-gradient(top, #78c2ef, #3cd09c);
+  background-image: -o-linear-gradient(top, #78c2ef, #3cd09c);
+  background-image: linear-gradient(to bottom, #78c2ef, #3cd09c);
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  -webkit-file-upload-button: none;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-size: 10pt;
+}
+
+#audio-file:hover::before {
+  background-image: -webkit-linear-gradient(top, #78c2ef, #3cd09c);
+  background-image: -moz-linear-gradient(top, #78c2ef, #3cd09c);
+  background-image: -ms-linear-gradient(top, #78c2ef, #3cd09c);
+  background-image: -o-linear-gradient(top, #78c2ef, #3cd09c);
+  background-image: linear-gradient(to bottom, #78c2ef, #3cd09c);
+}
+
+#audio-file:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}*/
