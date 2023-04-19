@@ -17,6 +17,7 @@ audioFileInput.addEventListener('change', function() {
     player.src = url;
     player.controls = false;
     player.volume = 0.5;
+    player.preload = 'auto'
     
     var volumeContainer = document.createElement('div');
     volumeContainer.className = 'player-container';

@@ -8,7 +8,17 @@ black
 #3cd09c
 white */
 
+html {
+  margin: 0;
+  padding: 0;
+}
+
 body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   background-image: radial-gradient(
     circle at top,
@@ -30,8 +40,9 @@ h1 {
   font-size: 3rem;
 }
 
-p {
+a, p {
   color: white;
+  text-decoration: none;
 }
 
 label {
@@ -40,6 +51,11 @@ label {
 
 input[type='file'] {
   display: none;
+}
+
+footer {
+  margin-top: auto;
+  padding: 20px;
 }
 
 .volume-slider {
@@ -69,7 +85,6 @@ input[type='file'] {
 }
 
 .top-container {
-  margin-top: 50px;
   padding: 20px;
 }
 
@@ -77,13 +92,7 @@ input[type='file'] {
   padding: 20px 0;
 }
 
-.bottom-container {
-  padding: 20px 0;
-}
-
 .copyright {
-  padding: 20px 0;
-  margin: 0 auto;
   font-size: 0.75rem;
   width: 50%;
 }
@@ -103,9 +112,8 @@ input[type='file'] {
   height: 30px;
   background-image: linear-gradient(
     to right, 
-    #8f85ff 50%,
-    #51a3e0 65%,
-    #78c2ef 75%,
+    #51a3e0 55%,
+    #78c2ef 70%,
     #3cd09c 85% 
   );
   font-family: 'Merriweather', serif;
@@ -122,9 +130,8 @@ input[type='file'] {
 .file-button:hover {
   background-image: linear-gradient(
     to left, 
-    #8f85ff 50%,
-    #51a3e0 65%,
-    #78c2ef 75%,
+    #51a3e0 55%,
+    #78c2ef 70%,
     #3cd09c 85% 
   );
 }
